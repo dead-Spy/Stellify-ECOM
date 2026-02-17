@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Lenis Smooth Scroll Core Styles */
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Global Transitions and Smooth Scroll */
+html {
+  /* Lenis ব্যবহার করলে ব্রাউজারের ডিফল্ট smoothbehavior অফ রাখা ভালো */
+  scroll-behavior: auto;
+}
+
+body {
+  background-color: #F9F7F4; /* আপনার artisanal থিমের সাথে ম্যাচ করা হয়েছে */
+  color: #2C261F;
+  overflow-x: hidden;
+}
+
+/* Typography Selection */
+* {
+  font-family: 'Outfit', sans-serif;
+}
+
+.prata-regular {
+  font-family: "Prata", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Active NavLink Styles */
+a.active hr {
+  display: block;
+}
+
+/* Custom Scrollbar - Minimal and Luxury */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #2C261F;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8D7B68;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4A4238;
+}
+
+/* Mobile Active State */
+@media (max-width: 640px) {
+  a.active {
+    background-color: #2C261F;
+    color: #F9F7F4;
+  }
+}
+
+/* Custom Selection Color */
+::selection {
+  background-color: #2C261F;
+  color: #ffffff;
+}
+
+/* Utility for artisanal colors */
+.text-gold {
+  color: #8D7B68;
+}
+
+.bg-navy {
+  background-color: #2C261F;
+}

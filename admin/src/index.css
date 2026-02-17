@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Prata&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Reset & Smoothness */
+* {
+  font-family: 'Outfit', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-[#F9F7F4] text-[#2C261F] antialiased;
+}
+
+/* Prata for Serif Headings */
+.font-serif {
+  font-family: 'Prata', serif;
+}
+
+/* Global Form Elements Refinement */
+select,
+input,
+textarea {
+  @apply border border-slate-200 bg-white transition-all duration-300;
+  outline: none;
+}
+
+input:focus, 
+textarea:focus, 
+select:focus {
+  @apply ring-1 ring-[#8D7B68] border-[#8D7B68] bg-[#F9F7F4]/50;
+}
+
+/* Custom Scrollbar for Luxury Feel */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F9F7F4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #EAE3DC;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8D7B68;
+}
+
+/* Active Sidebar State - Intelligence & Clarity */
+.active {
+  @apply bg-[#2C261F] text-white shadow-xl shadow-black/10 scale-[1.02];
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Custom Toast Styling Overrides */
+.Toastify__toast {
+  @apply border border-slate-100 shadow-2xl !important;
+  font-family: 'Outfit', sans-serif;
+}
+
+.Toastify__toast--success {
+  @apply border-emerald-100 !important;
+}
+
+/* Utility Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade {
+  animation: fadeIn 0.6s ease-out forwards;
+}
