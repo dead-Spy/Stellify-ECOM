@@ -218,3 +218,10 @@ Password: admin123
 
 Never expose database credentials or secret keys in production
 environments.
+
+------------------------------------------------------------------------
+
+# License
+
+Licensed under the GNU General Public License v3.0.  
+See the LICENSE file for details.

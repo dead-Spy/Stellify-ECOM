@@ -8,7 +8,7 @@
     "server": "nodemon server.js"
   },
   "author": "",
-  "license": "ISC",
+  "license": "GPL-3.0-or-later",
   "description": "",
   "dependencies": {
     "bcrypt": "^5.1.1",
