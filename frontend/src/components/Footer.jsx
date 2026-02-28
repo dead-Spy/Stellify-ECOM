@@ -99,7 +99,7 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Professional Large Text Overlay */}
+      {/* Large Text Overlay */}
       <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 pointer-events-none select-none w-full text-center">
         <h1 className="text-[18vw] font-black tracking-tighter whitespace-nowrap bg-professional-shimmer">
           STELLIFY

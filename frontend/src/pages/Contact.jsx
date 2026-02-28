@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <div className="bg-[#FAF9F6] min-h-screen pt-32 md:pt-44 font-sans selection:bg-[#D4AF37] selection:text-white">
       
-      {/* Section 1: Minimalist Intro */}
+      {/* Minimalist Intro */}
       <div className="max-w-7xl mx-auto px-6 md:px-16 text-center mb-24">
         <motion.p 
           initial={{ opacity: 0 }}
@@ -24,7 +24,7 @@ const Contact = () => {
 
       <div className="max-w-7xl mx-auto px-6 md:px-16 grid grid-cols-1 lg:grid-cols-2 gap-0 border border-[#D4AF37]/20">
         
-        {/* Left: Immersive Visual */}
+        {/* Immersive Visual */}
         <div className="relative h-[500px] lg:h-auto overflow-hidden border-r border-[#D4AF37]/20">
           <img
             className="w-full h-full object-cover grayscale-[0.5] hover:grayscale-0 transition-all duration-[2s]"
@@ -38,7 +38,7 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Right: Artisanal Form (No Boxes, Just Lines) */}
+        {/* Artisanal Form */}
         <div className="bg-white p-10 md:p-20 flex flex-col justify-center">
           <div className="space-y-12">
             <div>
@@ -82,11 +82,11 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Footer: Quick Contact */}
+      {/* Quick Contact */}
       <div className="max-w-7xl mx-auto px-6 md:px-16 py-20 flex flex-col md:flex-row justify-between items-center gap-10 border-x border-b border-[#D4AF37]/20 mb-20">
         <div className="text-center md:text-left">
           <p className="text-[9px] tracking-[0.4em] text-[#8B8B8B] uppercase mb-2">Location</p>
-          <p className="text-sm font-serif italic text-[#1A1A1A]">Stellify Plaza, Washington, USA</p>
+          <p className="text-sm font-serif italic text-[#1A1A1A]">Stellify Plaza, Dhaka, Bangladesh</p>
         </div>
         <div className="text-center md:text-left">
           <p className="text-[9px] tracking-[0.4em] text-[#8B8B8B] uppercase mb-2">Connect</p>

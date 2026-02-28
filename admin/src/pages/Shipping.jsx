@@ -31,7 +31,7 @@ const Shipping = () => {
         </button>
       </div>
 
-      {/* High Quality Animation: Moving Logistics Path */}
+      {/*  Moving Logistics Path */}
       <div className="relative w-full h-48 bg-[#F9F7F4] rounded-[40px] border border-slate-100 overflow-hidden group">
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <svg width="100%" height="100%" viewBox="0 0 800 200" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -62,7 +62,7 @@ const Login = () => {
         onSubmit={onSumbitHandler}
         className="flex flex-col items-center w-full max-w-[450px] m-auto gap-8 text-[#2C261F] bg-white p-10 md:p-16 border border-[#8D7B68]/10 shadow-[0_40px_100px_rgba(0,0,0,0.03)] relative"
       >
-        {/* Aesthetic Detail */}
+        {/* Detail */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-[1px] bg-[#8D7B68]/30"></div>
 
         <div className="flex flex-col items-center gap-4 mb-4">

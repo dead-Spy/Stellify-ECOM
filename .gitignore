@@ -22,6 +22,7 @@
 # Next.js specific
 **/.next/
 **/out/
+**/dist/
 
 # IDE / Editor specific
 .vscode/*

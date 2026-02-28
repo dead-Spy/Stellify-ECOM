@@ -53,7 +53,7 @@ const Cart = () => {
 
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           
-          {/* Left: Cart Items */}
+          {/* Cart Items */}
           <div className="w-full lg:flex-1">
             <AnimatePresence mode="popLayout">
               {cartData.length > 0 ? (
@@ -132,7 +132,7 @@ const Cart = () => {
             </AnimatePresence>
           </div>
 
-          {/* Right: Checkout Summary (Sticky) */}
+          {/* Checkout Summary */}
           {cartData.length > 0 && (
             <div className="w-full lg:w-[400px] lg:sticky lg:top-40">
               <motion.div 

@@ -47,7 +47,7 @@ const SearchBar = () => {
             />
           </motion.div>
           
-          {/* Subtle Decorative Line */}
+          {/* Decorative Line */}
           <div className="mt-4 text-[8px] tracking-[0.4em] text-[#8D7B68] uppercase font-medium opacity-60">
             Handcrafted Treasures • 2026
           </div>

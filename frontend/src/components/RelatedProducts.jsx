@@ -64,7 +64,7 @@ const RelatedProducts = ({ category, subCategory }) => {
       <div className="relative group/slider">
         <Swiper
           modules={[Autoplay, Pagination, Navigation, FreeMode]}
-          speed={1000} // Smooth 1-second slide transition
+          speed={1000} 
           spaceBetween={20}
           slidesPerView={1.5}
           loop={related.length > 5}
@@ -119,7 +119,7 @@ const RelatedProducts = ({ category, subCategory }) => {
           ))}
         </Swiper>
 
-        {/* Improved Pagination Indicator below the Slider */}
+        {/* Improved Pagination Indicator */}
         <div className="custom-pagination flex justify-center mt-4 h-4" />
       </div>
 

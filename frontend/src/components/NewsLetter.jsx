@@ -8,11 +8,11 @@ const NewsLetter = () => {
   };
 
   return (
-    // ব্যাকগ্রাউন্ড কালার এখন #F9F7F4 যা আপনার কন্টাক্ট পেজের সাথে ম্যাচ করবে
+    
     <div className="relative py-40 px-6 md:px-16 bg-[#F9F7F4]">
       <div className="max-w-7xl mx-auto py-24 relative border-y border-[#8D7B68]/10">
         
-        {/* ব্যাকগ্রাউন্ডে টেক্সট - যা লুক আরও লাক্সারি করবে */}
+        {/* Bg Text Decorative */}
         <div className="absolute top-0 left-0 text-[10vw] font-serif italic select-none pointer-events-none w-full h-full flex items-center justify-center overflow-hidden bg-elite-shimmer">
           Stellify Elite
         </div>
@@ -42,7 +42,7 @@ const NewsLetter = () => {
             </p>
           </motion.div>
 
-          {/* ইনপুট ফর্ম সেকশন */}
+          {/* Input form */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}

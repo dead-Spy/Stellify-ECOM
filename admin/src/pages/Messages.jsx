@@ -20,7 +20,7 @@ const Messages = ({ token }) => {
   const [selectedMessage, setSelectedMessage] = useState(null);
   const [searchTerm, setSearchTerm] = useState("");
 
-  // প্রফেশনাল ক্লায়েন্ট ইনকোয়ারি ডেমো ডেটা
+ 
   const demoMessages = [
     {
       _id: "msg_01",
@@ -54,10 +54,10 @@ const Messages = ({ token }) => {
       if (response.data.success && response.data.messages.length > 0) {
         setMessages(response.data.messages.reverse());
       } else {
-        setMessages(demoMessages); // ব্যাকএন্ড খালি থাকলে ডেমো দেখাবে
+        setMessages(demoMessages); 
       }
     } catch (error) {
-      setMessages(demoMessages); // এরর হলে ডেমো দেখাবে
+      setMessages(demoMessages); 
     }
   };
 
@@ -65,7 +65,7 @@ const Messages = ({ token }) => {
     fetchMessages();
   }, [token]);
 
-  // ডেমো মেসেজ ডিলিট করার সিমুলেশন
+  
   const deleteMessage = (id) => {
     if(window.confirm("Archiving this conversation?")) {
       setMessages(prev => prev.filter(m => m._id !== id));

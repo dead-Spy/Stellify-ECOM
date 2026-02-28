@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const List = ({ token }) => {
   const [list, setList] = useState([]);
 
-  // প্রফেশনাল ডেমো ডেটা
+  
   const demoData = [
     {
       _id: "art_001",
@@ -37,13 +37,13 @@ const List = ({ token }) => {
     try {
       const response = await axios.get(backendUrl + "/api/product/list");
       if (response.data.success) {
-        // যদি ডাটাবেস খালি থাকে তবে ডেমো ডেটা দেখাবে, নয়তো রিয়েল ডেটা
+        
         setList(response.data.products.length > 0 ? response.data.products : demoData);
       } else {
-        setList(demoData); // এরর হলে ডেমো ডেটা ব্যাকআপ হিসেবে থাকবে
+        setList(demoData); 
       }
     } catch (error) {
-      setList(demoData); // ফেচিং ফেইল করলে ডেমো ডেটা দেখাবে
+      setList(demoData); 
     }
   };
 
@@ -59,7 +59,7 @@ const List = ({ token }) => {
           toast.success("Artifact removed from archive");
           fetchList();
         } else {
-          // ডেমো ডেটা ডিলিট করার সিমুলেশন (প্রজেক্ট লাইভ হলে এটি লাগবে না)
+          
           setList(prev => prev.filter(item => item._id !== id));
           toast.info("Demo artifact removed locally");
         }

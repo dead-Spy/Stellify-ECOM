@@ -16,7 +16,7 @@ const Collection = () => {
   const [sortType, setSortType] = useState("relevant");
   const [loading, setLoading] = useState(true);
 
-  // মোবাইলে কোন কার্ডটি অ্যাক্টিভ তা ট্র্যাক করার জন্য
+  // track active Card
   const [activeCard, setActiveCard] = useState(null);
 
   const toggleCategory = (e) => {
@@ -65,7 +65,7 @@ const Collection = () => {
   return (
     <div className="relative flex flex-col sm:flex-row gap-8 pt-24 md:pt-36 px-4 md:px-12 bg-[#FCFBFA] min-h-screen font-sans items-start">
       
-      {/* Sidebar & Mobile Filters (No changes here) */}
+      {/* Sidebar & Mobile Filters */}
       <div className="hidden sm:block min-w-[250px] sticky top-32 self-start">
         <div className="bg-white p-6 rounded-[2rem] border border-[#8D7B68]/10 shadow-sm">
           <div className="flex items-center gap-2 mb-6 pb-4 border-b border-[#8D7B68]/10">
@@ -116,7 +116,7 @@ const Collection = () => {
         </button>
       </div>
 
-      {/* Filter & Sort Drawers (No changes here) */}
+      {/* Filter & Sort Drawers */}
       <AnimatePresence>
         {(showFilter || showSortDrawer) && (
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} onClick={() => {setShowFilter(false); setShowSortDrawer(false)}} className="fixed inset-0 bg-black/40 backdrop-blur-sm z-[60] sm:hidden" />
@@ -188,7 +188,7 @@ const Collection = () => {
                 <div className="bg-white rounded-[2.2rem] p-2 border border-transparent hover:border-[#8D7B68]/20 transition-all duration-500 shadow-sm hover:shadow-xl">
                   <div className="relative overflow-hidden rounded-[1.8rem] aspect-[3/4]">
                     
-                    {/* ক্লিকেবল এরিয়া যা ProductItem কে প্রথম ক্লিকে ব্লক করবে */}
+                    {/* cliCkable Arrea */}
                     <div 
                       className="absolute inset-0 z-10 sm:hidden" 
                       onClick={() => setActiveCard(activeCard === item._id ? null : item._id)}
@@ -196,7 +196,7 @@ const Collection = () => {
 
                     <ProductItem id={item._id} name={item.name} price={item.price} image={item.image} />
                     
-                    {/* বাটন ওভারলে */}
+                    {/* Button Overlay */}
                     <div className={`absolute inset-0 bg-black/20 backdrop-blur-[2px] transition-all duration-500 flex flex-col items-center justify-center gap-4 z-20 ${activeCard === item._id ? "opacity-100 visible" : "opacity-0 invisible group-hover:opacity-100 group-hover:visible"}`}>
                        <button 
                         onClick={(e) => { e.stopPropagation(); addToCart(item._id, "Standard"); }} 

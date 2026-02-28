@@ -108,7 +108,7 @@ const Navbar = () => {
         </div>
       </motion.nav>
       
-      {/* Top-Down Professional Dropdown Menu */}
+      {/* Top-Down Dropdown Menu */}
       <AnimatePresence>
         {visible && (
           <motion.div 
@@ -132,7 +132,7 @@ const Navbar = () => {
                   <span className="text-sm tracking-[0.3em] uppercase italic font-serif">
                     {item}
                   </span>
-                  {/* ফিক্সড: এখানে className-এ কোনো ফাংশন ব্যবহার করা হয়নি */}
+                  {/* no function used in ClassRoom */}
                   <ChevronRight size={14} className="opacity-40" />
                 </NavLink>
               ))}

@@ -36,7 +36,7 @@ const Navbar = ({ setToken }) => {
         </button>
 
         <div className="flex items-center gap-4 border-l border-slate-100 pl-6 group cursor-pointer">
-          <div className="flex flex-col items-end hidden sm:flex">
+          <div className="flex flex-col items-end sm:flex">
             <p className="text-[11px] font-black text-[#2C261F] uppercase tracking-tighter">Master Artisan</p>
             <p className="text-[9px] text-slate-400 font-medium italic tracking-wide">Primary Authority</p>
           </div>

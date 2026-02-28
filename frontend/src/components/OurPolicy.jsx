@@ -5,7 +5,7 @@ import { Ruler, Sparkles, ShieldCheck, ArrowRight, X, Info } from "lucide-react"
 const ArtisanStandard = () => {
   const [showChart, setShowChart] = useState(false);
 
-  // স্ক্রল লক লজিক পুরোপুরি সরিয়ে ফেলা হয়েছে যাতে ওয়েবসাইট এবং পপআপ উভয়ই স্ক্রল করা যায়
+
   useEffect(() => {
     return () => {
       document.body.style.overflow = "unset";
@@ -83,7 +83,7 @@ const ArtisanStandard = () => {
       <AnimatePresence>
         {showChart && (
           <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 overflow-y-auto">
-            {/* Backdrop - pointer-events-none সরিয়ে ফেলা হয়েছে যাতে পেছনের স্ক্রল পাওয়া যায় */}
+            {/* Backdrop - pointer-events-none */}
             <motion.div 
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}

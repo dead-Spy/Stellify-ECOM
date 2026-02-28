@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import SearchBar from "./components/SearchBar";
-import SmoothScroll from "./components/SmoothScroll"; // ৩ নম্বর ধাপের ইমপোর্ট
+import SmoothScroll from "./components/SmoothScroll";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -30,7 +30,7 @@ const PageLoader = () => (
 
 const App = () => {
   return (
-    // এখানে SmoothScroll দিয়ে পুরো অ্যাপকে র‍্যাপ করা হয়েছে
+    //  using smoothScroll
     <SmoothScroll>
       <div className="min-h-screen bg-[#F9F7F4] selection:bg-[#2C261F] selection:text-white">
         <ToastContainer 

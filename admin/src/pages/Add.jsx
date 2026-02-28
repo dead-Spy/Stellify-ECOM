@@ -19,7 +19,7 @@ const Add = ({ token }) => {
   const [bestseller, setBestseller] = useState(false);
   const [sizes, setSizes] = useState([]);
 
-  // Dynamic Size Logic for Luxury Categories
+  // Dynamic Size Logic for Categories
   const getAvailableSizes = () => {
     switch (category) {
       case "Rings": return ["5", "6", "7", "8", "9", "Adjustable"];

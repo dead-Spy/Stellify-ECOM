@@ -52,7 +52,7 @@ const About = () => {
           </motion.div>
         </div>
 
-        {/* Why Choose Us Section */}
+        {/* Choose Us Section */}
         <div className="text-center mb-16">
           <Title text1={"THE"} text2={"PROMISE"} />
         </div>

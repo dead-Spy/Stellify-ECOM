@@ -50,7 +50,7 @@ const ShopContextProvider = ({ children }) => {
     toast.success("Added to cart");
   };
 
-  // এই ফাংশনটি আপনার মিসিং ছিল যা Cart.jsx এর জন্য বাধ্যতামূলক
+  
   const updateQuantity = async (itemId, size, quantity) => {
     let cartData = structuredClone(cartItems);
     cartData[itemId][size] = quantity;
@@ -69,7 +69,7 @@ const ShopContextProvider = ({ children }) => {
     return totalCount;
   };
 
-  // CartTotal কম্পোনেন্টের জন্য এই ফাংশনটি লাগবে
+  
   const getCartAmount = () => {
     let totalAmount = 0;
     for (const items in cartItems) {
@@ -89,7 +89,7 @@ const ShopContextProvider = ({ children }) => {
     products, currency, deliveryFee,
     search, setSearch, showSearch, setShowSearch,
     cartItems, setCartItems, addToCart, getCartCount,
-    updateQuantity, getCartAmount, // এই দুটি এখানে যোগ করা হয়েছে
+    updateQuantity, getCartAmount, 
     navigate, backendUrl, token, setToken,
   };
 

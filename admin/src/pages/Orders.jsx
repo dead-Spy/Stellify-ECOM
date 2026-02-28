@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 const Orders = ({ token }) => {
   const [orders, setOrders] = useState([]);
 
-  // প্রফেশনাল লাক্সারি অর্ডার ডেমো ডেটা
+  // Demo order for now
   const demoOrders = [
     {
       _id: "ord_001",
@@ -64,10 +64,10 @@ const Orders = ({ token }) => {
       if (response.data.success && response.data.orders.length > 0) {
         setOrders(response.data.orders.reverse());
       } else {
-        setOrders(demoOrders); // ব্যাকএন্ডে ডাটা না থাকলে ডেমো দেখাবে
+        setOrders(demoOrders); 
       }
     } catch (error) {
-      setOrders(demoOrders); // এরর হলে ডেমো দেখাবে
+      setOrders(demoOrders); 
     }
   };
 
@@ -83,7 +83,7 @@ const Orders = ({ token }) => {
         await fetchAllOrders();
       }
     } catch (error) {
-      // ডেমো মোডে স্ট্যাটাস পরিবর্তন সিমুলেশন
+      
       setOrders(prev => prev.map(order => 
         order._id === orderId ? { ...order, status: event.target.value } : order
       ));

@@ -14,13 +14,13 @@ const Home = () => {
       transition={{ duration: 1.2, ease: "easeOut" }}
       className="bg-[#F9F7F4] overflow-hidden"
     >
-      {/* Hero Section - The First Impression */}
+      {/* Hero Section*/}
       <Hero />
 
-      {/* Main Content Sections with elegant spacing */}
+      {/* Main Content*/}
       <div className="flex flex-col gap-12 md:gap-24">
         
-        {/* Collections Section */}
+        {/* Collections */}
         <section className="relative z-10">
           <LatestCollection />
         </section>
@@ -29,7 +29,7 @@ const Home = () => {
           <BestSeller />
         </section>
         
-        {/* Decorative Artisanal Divider */}
+        {/* Artisanal Divider */}
         <div className="flex justify-center items-center py-20 opacity-60">
           <div className="w-16 md:w-32 h-[1px] bg-gradient-to-r from-transparent via-[#8D7B68] to-transparent"></div>
           <motion.div 

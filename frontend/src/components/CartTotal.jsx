@@ -8,7 +8,7 @@ const CartTotal = () => {
   return (
     <div className="relative w-full bg-[#FDFCFB] p-10 rounded-sm border border-[#8D7B68]/10 shadow-[0_20px_50px_rgba(0,0,0,0.03)] overflow-hidden">
       
-      {/* Artisanal Background Detail */}
+      {/* Background Detail */}
       <div className="absolute inset-0 opacity-[0.02] bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] pointer-events-none"></div>
       <div className="absolute -top-10 -right-10 w-40 h-40 bg-[#EAE3DC] blur-3xl rounded-full opacity-40"></div>
 
@@ -64,7 +64,7 @@ const CartTotal = () => {
           </div>
         </motion.div>
 
-        {/* Aesthetic Policy Box */}
+        {/* Policy Box */}
         <div className="mt-6 p-5 border border-dashed border-[#8D7B68]/20 bg-[#F9F7F4]">
             <p className="text-[8px] text-[#8D7B68] tracking-[0.2em] text-center uppercase leading-relaxed font-bold">
               Premium artisanal packaging & <br /> secure shipping included.
