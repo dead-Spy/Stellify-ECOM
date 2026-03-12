@@ -7,7 +7,6 @@ import SmoothScroll from "./components/SmoothScroll";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-// Lazy loading components
 const Home = lazy(() => import("./pages/Home"));
 const Collection = lazy(() => import("./pages/Collection"));
 const About = lazy(() => import("./pages/About"));
@@ -18,6 +17,11 @@ const Login = lazy(() => import("./pages/Login"));
 const PlaceOrder = lazy(() => import("./pages/PlaceOrder"));
 const Orders = lazy(() => import("./pages/Orders"));
 const Verify = lazy(() => import("./pages/Verify"));
+const ArtisanStory = lazy(() => import("./pages/ArtisanStory"));
+const ShippingGuide = lazy(() => import("./pages/ShippingGuide"));
+const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
+const Terms = lazy(() => import("./pages/Terms"));
+const Accessibility = lazy(() => import("./pages/Accessibility"));
 
 const PageLoader = () => (
   <div className="flex items-center justify-center min-h-[60vh] bg-[#F9F7F4]">
@@ -30,7 +34,6 @@ const PageLoader = () => (
 
 const App = () => {
   return (
-    //  using smoothScroll
     <SmoothScroll>
       <div className="min-h-screen bg-[#F9F7F4] selection:bg-[#2C261F] selection:text-white">
         <ToastContainer 
@@ -56,6 +59,11 @@ const App = () => {
               <Route path="/place-order" element={<PlaceOrder />} />
               <Route path="/orders" element={<Orders />} />
               <Route path="/verify" element={<Verify />} />
+              <Route path="/artisan-story" element={<ArtisanStory />} />
+              <Route path="/shipping-guide" element={<ShippingGuide />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/terms" element={<Terms />} />
+              <Route path="/accessibility" element={<Accessibility />} />
             </Routes>
           </Suspense>
         </main>
